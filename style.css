@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: aliceblue;
+}
+
+h1 {
+    padding: 20px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.btn {
+    height: 130px;
+    width: 130px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 40px;
+    color: white;
+}
+
+.reset {
+    padding: 8px 15px;
+    margin: 30px 10px;
+    border: 1px white solid;
+    background: transparent;
+    border-radius: 5px;
+    color: white;
+}
+
+.b1 {
+    border-right: 5px white solid;
+    border-bottom: 5px white solid;
+}
+
+.b2 {
+    border-right: 5px white solid;
+    border-bottom: 5px white solid;
+}
+
+.b3 {
+    border-bottom: 5px white solid;
+}
+
+.b4 {
+    border-right: 5px white solid;
+    border-bottom: 5px white solid;
+}
+
+.b5 {
+    border-right: 5px white solid;
+    border-bottom: 5px white solid;
+}
+
+.b6 {
+    border-bottom: 5px white solid;
+}
+
+.b7 {
+    border-right: 5px white solid;
+}
+
+.b8 {
+    border-right: 5px white solid;
+}
+
+.score {
+    display: flex;
+    gap: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+.mode-btn {
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+#winner {
+    margin: 5px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .score {
+        flex-direction: row;
+        gap: 50px;
+    }
+}
+
+.mode-btn {
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#winner {
+    margin: 5px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .btn {
+        height: 80px;
+        width: 80px;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .reset {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .mode-btn {
+        font-size: 1rem;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .btn {
+        height: 60px;
+        width: 60px;
+        font-size: 1rem;
+    }
+
+    .reset {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .mode-btn {
+        font-size: 15px;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .score {
+        font-size: 10px;
+        margin: 2px;
+        padding: 2px;
+        gap: 30px;
+        align-items: center;
+    }
+}
